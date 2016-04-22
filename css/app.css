@@ -139,14 +139,6 @@ input[type="radio"]:checked + label span {
   padding-right: 30px;
   padding-left: 30px;
 }
-.ensemble-logos .ensemble-deploy .ensemble-intro {
-  padding-right: 35px;
-  padding-left: 34px;
-}
-.ensemble-logos .ensemble-deploy .ensemble-intro.neg-margin {
-  padding-right: 20px;
-  padding-left: 20px;
-}
 .ensemble-logos .ensemble-intro {
   padding-top: 20px;
   color: #f36f2b;
@@ -156,9 +148,6 @@ input[type="radio"]:checked + label span {
 .ensemble-logos {
   position: relative;
 }
-.ensemble-logos .ensemble-deploy {
-  position: absolute;
-}
 .ensemble-logos p {
   line-height: 1.2;
 }
@@ -166,47 +155,8 @@ input[type="radio"]:checked + label span {
   display:inline-block;
   margin-bottom:20px;
 }
-.ensemble-logos .ensemble-deploy {
+.ensemble-logos .plus-text {
   display: none;
-}
-.ensemble-logos .close-button {
-  position: absolute;
-  right: 5%;
-  top: 1%;
-  font-size: 30px;
-  color: rgb(243, 114, 48);
-}
-.ensemble-logos .container {
-  position:relative;
-  border: 1px solid #f36f2b;
-  border-radius: 3px;
-  background-color: white;
-  padding: 0px 15px 0px;
-}
-#deploy-1 {
-  left: 1%;
-}
-#deploy-2 {
-  left: 33.3333%;
-}
-#deploy-3 {
-  right: 1%;
-}
-@media only screen and (max-width: 63.9375em) {
-  .ensemble-deploy {
-    display: none !important;
-  }
-}
-.show-for-small-only {
-    display: none;
-}
-@media screen and (max-width: 63.9375em) {
-  .hide-for-small-only {
-    display: none !important;
-  }
-  .show-for-small-only {
-    display: block !important;
-  }
 }
 .lettre-elus {
   background-color: #f6efe8;

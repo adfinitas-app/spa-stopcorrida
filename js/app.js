@@ -223,20 +223,16 @@ function isValid() {
 
 $(".deployer-ensemble").on("mouseover", function() {
   var htmlId = $(this).attr("id");
-  var id = htmlId.substr(8, htmlId.length);
-  $("#deploy" + id).show();
+  $("#" + htmlId + " .plus-text").show();
+  console.log("#" + htmlId + " .plus");
+  $("#" + htmlId + " .plus").hide();
 });
 
-$('.ensemble-deploy .close-button').on("click", function() {
-  var htmlId = $(this).parent().parent().attr("id");
-  console.log(htmlId);
-  $("#" + htmlId).hide();
-});
-
-$('.ensemble-deploy').on("mouseleave", function() {
+$('.deployer-ensemble').on("mouseleave", function() {
   var htmlId = $(this).attr("id");
-  console.log(htmlId);
-  $("#" + htmlId).hide();
+  $("#" + htmlId + " .plus-text").hide();
+  console.log("#" + htmlId + " .plus");
+  $("#" + htmlId + " .plus").show();
 });
 
 function launch() {
