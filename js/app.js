@@ -23,6 +23,22 @@ if (p['origine'] === "orixa" && 'email' in p)
   var sourceParam = 'Orixa';
 }
 
+if ('email' in p) {
+  $("input[name=email]").val(p['email']);
+}
+
+if ('firstname' in p) {
+  $("input[name=firstname]").val(p['firstname']);
+}
+
+if ('lastname' in p) {
+  $("input[name=lastname]").val(p['lastname']);
+}
+
+if ('phone' in p) {
+  $("input[name=phone]").val(p['phone']);
+}
+
 /*
  * Woopra tag
  */
