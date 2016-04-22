@@ -22,3 +22,20 @@ title: SPA - Merci pour votre signature
   </div>
   <a href="https://soutenir.la-spa.fr/a?cid=119" class="button jadhere">J'adhère à la SPA</a>
 </section>
+
+<!-- Orixa tag -->
+<script>
+function extractUrlParams(){
+  var t = document.location.search.substring(1).split('&'); var f = [];
+  for (var i=0; i<t.length; i++){
+    var x = t[ i ].split('=');
+    f[x[0]]=decodeURIComponent(x[1]);
+  }
+  return f;
+};
+
+var p = extractUrlParams();
+document.write('<iframe src="http://orixamedia.go2cloud.org/SLHG?adv_sub=' + 
+    p['email'] + 
+    '" scrolling="no" frameborder="0" width="1" height="1"></iframe>');
+</script>

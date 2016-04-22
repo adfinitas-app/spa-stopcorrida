@@ -1,6 +1,6 @@
 $(document).foundation();
 
-function extractUrlParams(){  
+function extractUrlParams(){
   var t = document.location.search.substring(1).split('&'); var f = [];
   for (var i=0; i<t.length; i++){
     var x = t[ i ].split('=');
@@ -14,11 +14,8 @@ var p = extractUrlParams();
 var merciPath = '/merci.html';
 var sourceParam = 'BDD';
 
-if (p['origine'] === "orixa" && 'email' in p)
+if (p['origine'] === "orixa")
 {
-  $('#petition').after('<iframe src="http://orixamedia.go2cloud.org/SLHG?adv_sub=' + 
-		   p['email'] + 
-		   '" scrolling="no" frameborder="0" width="1" height="1"></iframe>');
   var merciPath = '/merci-orixa.html';
   var sourceParam = 'Orixa';
 }
@@ -120,7 +117,7 @@ function makeCorsRequest(data) {
   xhr.onload = function() {
     //var text = xhr.responseText;
     //alert('Response from CORS request to ' + url + ': ' + text);
-    document.location.href = merciPath;
+    document.location.href = merciPath + "?email=" + data.db.email;
   };
   // Error Handler
   xhr.onerror = function() {
