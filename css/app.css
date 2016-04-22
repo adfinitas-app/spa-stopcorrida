@@ -1,0 +1,324 @@
+body, label {
+  text-align: center;
+}
+p, h1, h2, h3, h4, h5, h6, a, label {
+  font-family: 'Open Sans', sans-serif;
+}
+.semibold {
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.bg-container {
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+  background: url("../img/bg.png");
+  background-size: cover;
+  height: 500px;
+  background-position: 50% 70%;
+}
+.orange-bg {
+  background-color: #f36f2b;
+}
+.logo {
+  position: absolute;
+  left: 5%;
+  top: 55%;
+}
+.trademark {
+  position: absolute;
+  font-size: 14px;
+  bottom: 0%;
+  left: 72%;
+  color: white;
+}
+.form, .form label {
+  color: white;
+}
+.form h3 {
+  font-size: 25px;
+  margin-bottom: -5px;
+  line-height: 1;
+}
+.form h2 {
+  font-size: 55px;
+  font-weight: 800;
+}
+.form-sign-text {
+  font-size: 18px;
+}
+@media screen and (min-width: 64em) {
+  .form .smallgutter {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+.form {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.form input[type="text"],
+.form input[type="email"] {
+  border:0;
+  border-radius: 5px;
+}
+.form .button.sign {
+  background-color: #534741;
+  width: 100%;
+}
+.form .button.show-letter {
+  margin-top: 5px;
+  border: 1px solid white;
+  background: transparent;
+}
+@media screen and (min-width: 64em) {
+  .form .right {
+    text-align: right;
+  }
+  .form .left {
+    text-align: left;
+  }
+}
+input[type='radio'] {
+  display:none;
+}
+input + label span {
+  display:inline-block;
+  width:16px;
+  height:19px;
+  margin:6px 10px 0 0;
+  vertical-align:middle;
+  float: left;
+}
+input[type="radio"] + label span {
+  background:url("../img/radio.png") left top no-repeat;
+}
+input[type="radio"]:checked + label span {
+  background:url("../img/radio.png") -16px top no-repeat;
+}
+.ensemble {
+  color: #716252;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ensemble h1,
+.ensemble h2,
+.ensemble p {
+  color: #716252;
+}
+.ensemble h1,
+.ensemble h2,
+.ensemble h3 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+.ensemble h2 {
+  font-size: 60px;
+}
+.ensemble h3 {
+  font-size: 40px;
+}
+.ensemble-logos {
+  margin-top: 50px;
+}
+.ensemble-logos img.logo-ensemble {
+  height: 110px;
+}
+.ensemble-logos .columns {
+  padding: 0px 70px;
+}
+.ensemble-logos p {
+  padding-top: 20px;
+  color: #f36f2b;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.ensemble-logos .plus {
+  display:inline-block;
+  margin-bottom:20px;
+}
+.ensemble-logos .neg-margin {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.lettre-elus {
+  background-color: #f6efe8;
+}
+.lettre-elus h2 {
+  text-transform:uppercase;
+  color: #f36f2b;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
+.lettre-elus p {
+  color: #716252;
+}
+.lettre-elus .text {
+  padding-top:40px;
+  /*padding-bottom:40px;*/
+}
+@media screen and (min-width: 64em) {
+  .lettre-elus .text {
+    padding: 40px 100px 0px;
+  }
+}
+.lettre-elus p,
+.lettre-elus h3,
+.lettre-elus h2 {
+  text-align: left;
+}
+.lettre-elus .button {
+  margin-top: 40px;
+  width: 100%;
+}
+.lettre-elus .button.suite {
+  background: transparent;
+  border: 1px solid #f36f2b;
+  color: #f36f2b;
+}
+.lettre-elus .button.sign {
+  background-color: #f36f2b;
+}
+.mot-de-fin {
+  margin-top: 100px;
+  padding-bottom: 70px;
+}
+.mot-de-fin > .row {
+  text-align: left;
+}
+.mot-de-fin h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f36f2b;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.mot-de-fin p {
+  text-align: left;
+  color: #716252;
+}
+.mot-de-fin .button {
+  background-color: #f36f2b;
+}
+.mot-de-fin .signature {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+.footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #cdbcad;
+  color: white;
+}
+.footer .logo-footer {
+  height: 38px;
+}
+.footer a {
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: white;
+}
+.footer img {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 64em) {
+  .footer a {
+    margin-bottom: 20px;
+  }
+  .footer img {
+    margin-bottom:0px;
+  }
+  .footer .smallgutter {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-top:5px;
+  }
+  .footer .separator {
+    display:inline-block !important;
+    height: 13px;
+    border-right: 2px solid white;
+    display: inline-block;
+    margin-top:7px;
+  }
+  .footer .separator + a {
+    display:inline-block;
+  }
+  .footer .separator.sep1 {
+    float:left;
+    margin-left: 4px;
+  }
+  .footer .separator.sep2 {
+    float:right;
+  }
+}
+.petition h2 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+.petition .close-button {
+  color: #f37230;
+  font-size: 30px;
+  position: absolute;
+  right: 4%;
+  top: 1%;
+}
+.petition p {
+  color: #716252;
+  text-align: left;
+}
+.petition h2 {
+  color: #f36f2b;
+  text-align: left;
+}
+.petition .button.sign {
+  margin-top:30px;
+  background-color: #f36f2b;
+}
+@media screen and (min-width: 64em) {
+  .petition.reveal {
+    width:800px;
+  }
+}
+.petition img {
+  float:left;
+}
+.merci {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #716252;
+}
+.merci h2, .merci h3 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+.merci h2 {
+  font-size: 60px;
+}
+.merci h3 {
+  font-size: 40px;
+}
+.merci p {
+  margin-top:20px;
+}
+.merci a.button {
+  background-color: #f36f2b;
+  padding: 25px 40px;
+}
+.merci .orange {
+  color: #f36f2b;
+}
+.error input {
+  border: 2.5px solid red !important;
+}
+.error .error-txt {
+  display: block !important;
+  color: red;
+  text-align: center;
+}
