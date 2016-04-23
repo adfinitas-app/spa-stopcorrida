@@ -26,19 +26,19 @@ if (p['origine'] === "orixa")
   var sourceParam = 'Orixa';
 }
 
-if (p['email'] != "undefined") {
+if (p['email'] && p['email'] != "undefined") {
   $("input[name=email]").val(p['email']);
 }
 
-if (p['firstname'] != "undefined") {
+if (p['firstname'] && p['firstname'] != "undefined") {
   $("input[name=firstname]").val(p['firstname']);
 }
 
-if (p['lastname'] != "undefined") {
+if (p['lastname'] && p['lastname'] != "undefined") {
   $("input[name=lastname]").val(p['lastname']);
 }
 
-if (p['phone'] != "undefined") {
+if (p['phone'] && p['phone'] != "undefined") {
   $("input[name=phone]").val(p['phone']);
 }
 
@@ -55,8 +55,9 @@ woopra.config({
   cookie_domain:'.spa.asso.fr'
 });
 
-if (p['email'] != "undefined") {
-  if (p['lastname'] != "undefined" && p['firstname'] != "undefined") {
+if (p['email'] && p['email'] != "undefined") {
+  if (p['firstname'] && p['firstname'] != "undefined" &&
+      p['lastname'] && p['lastname'] != "undefined") {
     woopra.identify({
       email: p['email'],
       name: p['firstname'] + ' ' + p['lastname']
@@ -161,7 +162,8 @@ function submitForm() {
       "host": "spa.asso.fr",
       "cookie": getCookie("wooTracker"),
       "cv_firstname": pureField($("input[name='firstname']").val()),
-      "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+      "cv_name": pureField($("input[name='firstname']").val()) + ' ' +
+	pureField($("input[name='lastname']").val()),
       "cv_lastname": pureField($("input[name='lastname']").val()),
       "cv_email": pureField($("input[name='email']").val()),
       "cv_phone": pureField($("input[name='phone']").val()),
