@@ -24,17 +24,17 @@ if ('email' in p) {
   $("input[name=email]").val(p['email']);
 }
 
-if ('firstname' in p) {
-  $("input[name=firstname]").val(p['firstname']);
-}
+//if ('firstname' in p) {
+//  $("input[name=firstname]").val(p['firstname']);
+//}
 
-if ('lastname' in p) {
-  $("input[name=lastname]").val(p['lastname']);
-}
+//if ('lastname' in p) {
+//  $("input[name=lastname]").val(p['lastname']);
+//}
 
-if ('phone' in p) {
-  $("input[name=phone]").val(p['phone']);
-}
+//if ('phone' in p) {
+//  $("input[name=phone]").val(p['phone']);
+//}
 
 /*
  * Woopra tag
