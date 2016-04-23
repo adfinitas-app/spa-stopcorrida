@@ -12,7 +12,13 @@ function extractUrlParams(){
 var p = extractUrlParams();
 
 var merciPath = '/merci.html';
-var sourceParam = 'BDD';
+var sourceParam = 'direct';
+
+if (p['origine'] === "bdd")
+{
+  var merciPath = '/merci.html';
+  var sourceParam = 'BDD';
+}
 
 if (p['origine'] === "orixa")
 {
