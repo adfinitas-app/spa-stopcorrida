@@ -26,21 +26,21 @@ if (p['origine'] === "orixa")
   var sourceParam = 'Orixa';
 }
 
-if ('email' in p) {
+if (p['email'] != "undefined") {
   $("input[name=email]").val(p['email']);
 }
 
-//if ('firstname' in p) {
-//  $("input[name=firstname]").val(p['firstname']);
-//}
+if (p['firstname'] != "undefined") {
+  $("input[name=firstname]").val(p['firstname']);
+}
 
-//if ('lastname' in p) {
-//  $("input[name=lastname]").val(p['lastname']);
-//}
+if (p['lastname'] != "undefined") {
+  $("input[name=lastname]").val(p['lastname']);
+}
 
-//if ('phone' in p) {
-//  $("input[name=phone]").val(p['phone']);
-//}
+if (p['phone'] != "undefined") {
+  $("input[name=phone]").val(p['phone']);
+}
 
 /*
  * Woopra tag
@@ -55,8 +55,8 @@ woopra.config({
   cookie_domain:'.spa.asso.fr'
 });
 
-if ('email' in p) {
-  if ('lastname' in p && 'firstname' in p) {
+if (p['email'] != "undefined") {
+  if (p['lastname'] != "undefined" && p['firstname'] != "undefined") {
     woopra.identify({
       email: p['email'],
       name: p['firstname'] + ' ' + p['lastname']
