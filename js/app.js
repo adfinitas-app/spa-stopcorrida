@@ -155,6 +155,7 @@ function submitForm() {
       "host": "spa.asso.fr",
       "cookie": getCookie("wooTracker"),
       "cv_firstname": pureField($("input[name='firstname']").val()),
+      "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
       "cv_lastname": pureField($("input[name='lastname']").val()),
       "cv_email": pureField($("input[name='email']").val()),
       "cv_phone": pureField($("input[name='phone']").val()),
