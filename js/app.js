@@ -154,7 +154,7 @@ function submitForm() {
       "lastname": pureField($("input[name='lastname']").val()),
       "email": pureField($("input[name='email']").val()),
       "phone": pureField($("input[name='phone']").val()),
-      //"optin": pureField($("input[name='optin']:checked").val()),
+      "optin": pureField($("input[name='optin']:checked").val()),
       "event": "petitioncorrida",
       "source": sourceParam,
     },
@@ -167,9 +167,9 @@ function submitForm() {
       "cv_lastname": pureField($("input[name='lastname']").val()),
       "cv_email": pureField($("input[name='email']").val()),
       "cv_phone": pureField($("input[name='phone']").val()),
-      //"cv_optin": pureField($("input[name='optin']:checked").val()),
+      "cv_optin": pureField($("input[name='optin']:checked").val()),
       "event": "petitioncorrida",
-      //"ce_optin": pureField($("input[name='optin']:checked").val()),
+      "ce_optin": pureField($("input[name='optin']:checked").val()),
       "ce_source": sourceParam,
     }
   }
