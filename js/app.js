@@ -248,6 +248,10 @@ function launch() {
       submitForm();
     }
   });
+  $("#id_phone").intlTelInput({
+    utilsScript: "/js/tel-input/lib/libphonenumber/build/utils.js",
+    initialCountry: "fr"
+  });
 }
 
 $(document).ready(launch);

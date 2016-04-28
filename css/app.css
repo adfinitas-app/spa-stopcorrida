@@ -335,3 +335,7 @@ input[type="radio"]:checked + label span {
   color: red;
   text-align: center;
 }
+.intl-tel-input {
+  text-align: left;
+  color: rgb(113, 98, 82);
+}
