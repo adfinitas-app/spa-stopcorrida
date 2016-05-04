@@ -51,8 +51,7 @@ if (p['phone'] && p['phone'] != "undefined") {
 })("woopra");
 
 woopra.config({
-  domain: 'spa.asso.fr',
-  cookie_domain:'.spa.asso.fr'
+  domain: 'spa.asso.fr'
 });
 
 if (p['email'] && p['email'] != "undefined") {
